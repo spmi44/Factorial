@@ -9,11 +9,12 @@ class Testing(unittest.TestCase):
 # ##########################################################
 
   def test1 (self):
-    trials = {" test1a " : (0 ,1),
-    " test1b " : (1, 1),
-    " test1c " : (4, 24),
-    " test1d " : (6, 720),
-    " test1e " : (9, 362880)}
+    trials = {
+    "test1a" : (0 ,1),
+    "test1b" : (1, 1),
+    "test1c" : (4, 24),
+    "test1d" : (6, 720),
+    "test1e" : (9, 362880)}
  
   for name, (argument, result ) in trials.items():
     with self.subTest(name = name):
